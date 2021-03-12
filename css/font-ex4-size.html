@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body,html {
+            font-size: 30px;
+        }
+        
+        p {
+            font-size: 20px;
+        }
+        #percent {
+            font-size: 100%;
+        }
+        /* 부모엘리멘트 기준 body=30px=#percent */
+        .em {
+            font-size: 0.75em;
+        }
+        /* 1em 은 100% 0.5em은 50% */
+        .class {
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit.</p>
+    <p id="percent">Lorem ipsum dolor sit amet.</p>
+    <p class="em">Lorem ipsum dolor sit.</p>
+    <div class="em">
+        <p class="em">Lorem ipsum dolor sit.</p>
+        <!-- 여기선 div가 부모니까 div의 em의 em이 p 의 폰트 -->
+    </div>
+
+    <div class="rem">
+        <p class="rem">Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+
+</html>
