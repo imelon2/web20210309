@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="all.min.js"></script>
+<style>
+    .wrapper {
+        display: flex;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: grey;
+    }
+    .main {
+        color: white;
+        font-size: 30px;
+        padding: 15px;
+    }
+    .main:hover {
+        background-color: green;
+    }
+    .title-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .body-container {
+        display: flex;
+        margin-top: 10px;;
+    }
+    .body-container div:nth-child(1) {
+        background-color: gray;
+    }
+    .body-container div:nth-child(2) {
+        background-color: black;
+        color: white;
+    }
+    .body-container div:nth-child(3) {
+        background-color: yellow;
+    }
+    .main-content {
+        flex: 1;
+        padding: 20px 30px
+    }
+</style>
+</head>
+<body>
+
+    <div class="title-container">
+        <h1>w3school.com</h1>
+        <div>
+            <button>login</button>
+        </div>
+    </div>
+    <button>login</button>
+<!-- .navbar>.wrapper>.main*6>lorem1^^.wrapper>.main*3>lorem1 -->
+<div class="navbar">
+    <div class="wrapper">
+        <div class="main"><i class="fas fa-bars"></i></div>
+        <div class="main"><i class="fas fa-home"></i></div>
+        <div class="main">HTML</div>
+        <div class="main">CSS</div>
+        <div class="main">JAVASCRIPT</div>
+        <div class="main">MORE<i class="fas fa-caret-down"></i></div>
+    </div>
+    <div class="wrapper">
+        <div class="main"><i class="fas fa-adjust"></i></div>
+        <div class="main"><i class="fas fa-globe-americas"></i></div>
+        <div class="main"><i class="fas fa-search"></i></div>
+    </div>
+</div>
+
+<!-- .body-container>.side-menu+.main-content+.ad-container -->
+<div class="body-container">
+    <div class="side-menu">
+        <h3>CSS Tutorial</h3>
+        <h2>css home</h2>
+        <h2>css introduction</h2>
+        <h2>css syntax</h2>
+        <h2>selectors</h2>
+        <h2></h2>
+        <h2></h2>
+        <h2></h2>
+        <h2></h2>
+        <h2></h2>
+        <h2></h2>
+ </div>
+    <div class="main-content">
+        <h1></h1>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+    <div class="ad-container">
+        <img src="../html/cgv.png" alt="">
+    </div>
+</div>
+</body>
+</html> 

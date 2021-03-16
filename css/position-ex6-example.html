@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .main {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .main > li {
+            box-sizing: border-box;
+            width: 200px;
+            height: 100px;
+            border: 5px solid green;
+            position: relative;
+        }
+
+        .sub {
+            padding: 0px;
+            margin: 0px;
+            position: absolute;
+            top: 5px;
+            left: 200px;
+            list-style-type: none;
+            display: none;
+        }
+
+        .sub > li {
+            box-sizing: border-box;
+            width: 200px;
+            height: 100px;
+            border: 5px solid blue;
+        }
+        
+        li:hover > .sub {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ul.main>li*5>lorem4 -->
+    <ul class="main">
+        <li>Lorem ipsum dolor sit.
+
+            <ul class="sub">
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Nihil assumenda omnis dolorem!</li>
+                <li>Eligendi animi libero eveniet.</li>
+                <li>Quos rem tenetur optio.</li>
+                <li>Delectus porro deserunt quae.</li>
+            </ul>
+        </li>
+
+        <li>Reiciendis sit ratione totam.</li>
+        <li>Provident nam alias iste!</li>
+        <li>Laborum totam harum dolores!</li>
+        <li>Mollitia quasi eligendi magnam?</li>
+    </ul>
+</body>
+
+</html>
