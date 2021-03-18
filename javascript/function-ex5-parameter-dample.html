@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="../css/all.min.js"></script>
+    <style>
+    </style>
+</head>
+
+<body>
+    <button onclick="changeImage(this)" id="button1">캡틴</button>
+    <button onclick="changeImage(this)" id="button2">토르</button>
+    <button onclick="changeImage(this)" id="button3">아이어맨</button>
+    <button onclick="changeImage(this)" id="button4">완다</button>
+    <button onclick="changeImage1(this)" id="button5">아나</button>
+
+    <hr>
+
+    <img src="" alt="" id="img1">
+
+
+    <script>
+        function changeImage(params) {
+            document.getElementById("img1").src = params.innerHTML + ".jfif";
+        }
+        function changeImage1(params) {
+            document.getElementById("img1").src = params.innerHTML + ".jpg";
+        }
+
+
+
+    </script>
+</body>
+
+</html>
