@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="../css/all.min.js"></script>
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <script>
+        function start() {
+            console.log(this.name + "가 출발합니다.");
+        }
+
+
+        var car = {
+            name: "fiat",
+            start: start
+        };
+
+        var kar = {
+            name: "volvo",
+            start: start
+        };
+
+        kar.start();
+        car.start();
+
+    </script>
+</body>
+
+</html>

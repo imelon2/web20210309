@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="../css/all.min.js"></script>
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <script>
+        //method는 object의 function(함수)
+        function funcName(param1, param2) {
+            console.log("statement");
+        }
+        var car = {
+            name:"fiat",
+            moderl: 400,
+            start: function (param1, param2) {
+                console.log("~~~~");
+            } 
+        };
+
+        console.log(car.name);
+        funcName();
+
+        car.start();
+
+    </script>
+</body>
+
+</html>
