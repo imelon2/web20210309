@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("head1").siblings().css("color", "red")
+            $("head5").next().css("background-color", "yellow") //head6이 변함
+            $("head5").prev().css("background-color", "pink") //head4가 변함
+            $("head5").nextAll().css("border", "3px solid green")// head6~10이 변함
+            $("head5").prevAll().css("background-color", "black")// head4~1이 변함
+        });
+    </script>
+</head>
+
+<body>
+    <h1 id="head1">Lorem ipsum dolor sit.</h1>
+    <h1 id="head2">Fuga minima illo doloremque!</h1>
+    <h1 id="head3">Id praesentium vel blanditiis?</h1>
+    <h1 id="head4">Ad quis ratione odit!</h1>
+    <h1 id="head5">Consectetur necessitatibus minima voluptatibus.</h1>
+    <h1 id="head6">Eos nostrum eum iste.</h1>
+    <h1 id="head7">Tenetur dignissimos eius officia.</h1>
+    <h1 id="head8">Quam nobis labore neque?</h1>
+    <h1 id="head9">Alias saepe repellat modi?</h1>
+    <h1 id="head10">Eligendi exercitationem laborum laudantium!</h1>
+</body>
+
+</html>
